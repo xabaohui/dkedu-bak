@@ -10,7 +10,7 @@
 <!-- zhw modify -->
 <!-- zhw modify22 -->
 <title>${site.name}管理平台</title>
-<!-- lvbin -->
+<!-- lvbin test message -->
 <script type="text/javascript">
 //if(top!=this){top.location=this.location;}
 </script>
