@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="robots" content="none"/>
+<!-- zhw modify -->
 <title>${site.name}管理平台</title>
 <script type="text/javascript">
 //if(top!=this){top.location=this.location;}
