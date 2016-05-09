@@ -9,6 +9,7 @@
 <meta name="robots" content="none"/>
 <!-- zhw modify -->
 <title>${site.name}管理平台</title>
+<!-- lvbin -->
 <script type="text/javascript">
 //if(top!=this){top.location=this.location;}
 </script>
