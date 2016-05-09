@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="robots" content="none"/>
 <title>${site.name}管理平台</title>
+<!-- lvbin -->
 <script type="text/javascript">
 //if(top!=this){top.location=this.location;}
 </script>
