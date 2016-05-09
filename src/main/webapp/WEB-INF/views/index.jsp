@@ -12,6 +12,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>${site.name}管理平台 </title>
+<!-- lvbin modify -->
 <jsp:include page="/WEB-INF/views/commons/head.jsp"></jsp:include>
 <style type="text/css">
 html,body{height:100%;margin:0;padding:0;overflow:auto;}
