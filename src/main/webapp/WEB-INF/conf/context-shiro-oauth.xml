@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd"
+	default-lazy-init="true">
+	
+	<bean id="shiroOAuthFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="oauthSecurityManager" />
+		<property name="filters">
+			<util:map>
+				<entry key="oauth" value-ref="oauthFilter" />
+			</util:map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				/oauth/authc/*.jspx = oauth
+			</value>
+		</property>
+	</bean>
+	
+	<bean id="oauthFilter" class="com.jspxcms.core.security.oauth.OAuthFilter"/>
+	
+	<bean id="oauthSecurityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="oauthRealm" />
+		<!-- <property name="cacheManager" ref="shiroEhcacheManager" /> -->
+	</bean>
+	
+	<bean id="oauthRealm" class="com.jspxcms.core.security.oauth.OAuthRealm" depends-on="userDao,siteDao,operationLogDao,globalDao">
+		<property name="userShiroService" ref="userShiroServiceImpl" />
+	</bean>
+
+</beans>
