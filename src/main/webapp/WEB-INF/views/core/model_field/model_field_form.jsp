@@ -10,7 +10,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Jspxcms管理平台 - Powered by Jspxcms</title>
+<title>${site.name}管理平台</title>
 <jsp:include page="/WEB-INF/views/commons/head.jsp"></jsp:include>
 <script type="text/javascript">
 function confirmDelete() {

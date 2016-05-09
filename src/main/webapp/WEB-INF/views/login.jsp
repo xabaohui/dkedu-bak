@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="robots" content="none"/>
-<title>Jspxcms管理平台登录 - Powered by Jspxcms</title>
+<title>${site.name}管理平台</title>
 <script type="text/javascript">
 //if(top!=this){top.location=this.location;}
 </script>
